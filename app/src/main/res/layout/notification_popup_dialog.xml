@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/PopupColorBg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_notification_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_noti_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/tv_notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:padding="15dp"
+                android:text="@string/DemoText"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rl_noti_title"
+            android:background="@color/ViewDividerColor" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_notification_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:gravity="center_horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_notification_image"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                fresco:placeholderImage="@drawable/ic_placeholder" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_popup_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_notification_image"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_notification_Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:lineSpacingExtra="6dp"
+                android:text="@string/DemoText"
+                android:textColor="@color/ViewDividerColor"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rl_popup_message"
+            android:background="@color/ViewDividerColor" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_bottom"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.99">
+
+                <LinearLayout
+                    android:id="@+id/ll_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/CancelTxtMsg"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ViewDividerColor"
+                        android:textSize="14sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".02"
+                android:background="@color/ViewDividerColor" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.99">
+
+                <LinearLayout
+                    android:id="@+id/ll_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/CheckTxtMsg"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ViewDividerColor"
+                        android:textSize="14sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bt_dialog_close"
+        android:text="X"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

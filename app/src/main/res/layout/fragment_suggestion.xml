@@ -1,0 +1,501 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightSmokyColor">
+
+
+    <ScrollView
+        android:id="@+id/sv_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/LightSmokyColor"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorWhite"
+                app:cardCornerRadius="0dp"
+                card_view:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp">
+
+                        <votive.com.appuaet10.CustomUI.CustomBoldTextView
+                            android:id="@+id/tv_suggestion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:text="@string/SuggestionHeader"
+                            android:textColor="@color/NoInternetTitleColor"
+                            android:textColorHint="@color/RegisterHintColor"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlHardcoded" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tv_suggestion"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/ViewDividerColor"
+                            android:orientation="horizontal"
+                            android:visibility="visible" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp">
+
+                        <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                            android:id="@+id/tv_suggestion_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:text="@string/SuggestionHeaderTxtMsg"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/RegisterHintColor"
+                            android:textSize="14sp"
+                            tools:ignore="RtlHardcoded" />
+
+                        <View
+                            android:id="@+id/view_addAddress_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/tv_suggestion_header"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/ViewDividerColor"
+                            android:orientation="horizontal"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/LightSmokyColor">
+
+                        <EditText
+                            android:id="@+id/et_suggestion_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:hint="@string/ContactEtName"
+                            android:inputType="text"
+                            android:padding="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/RegisterHintColor"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/LightSmokyColor">
+
+                        <EditText
+                            android:id="@+id/et_suggestion_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:hint="@string/ContactEtEmail"
+                            android:inputType="textEmailAddress"
+                            android:padding="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/RegisterHintColor"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/LightSmokyColor">
+
+                        <EditText
+                            android:id="@+id/et_suggestion_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="left"
+                            android:hint="@string/BrandTxtContactNo"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:padding="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/RegisterHintColor"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/LightSmokyColor">
+
+                        <EditText
+                            android:id="@+id/et_suggestion_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:gravity="top|left"
+                            android:hint="@string/suggestionMessage"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:padding="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/RegisterHintColor"
+                            android:textCursorDrawable="@null"
+                            android:textSize="13sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_suggestion_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp">
+
+                        <Button
+                            android:id="@+id/b_suggestion_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_corner_shape"
+                            android:text="@string/contectSubmitText"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16sp"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/rl_progressBar"
+        layout="@layout/progress_bar_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/sv_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/LightSmokyColor"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/LightSmokyColor">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="0dp"
+                    card_view:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp">
+
+                            <votive.com.uaet10.custom.CustomBoldTextView
+                                android:id="@+id/tv_suggestion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:text="@string/SuggestionHeader"
+                                android:textColor="@color/NoInternetTitleColor"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/tv_suggestion"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/ViewDividerColor"
+                                android:orientation="horizontal"
+                                android:visibility="visible" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp">
+
+                            <votive.com.uaet10.custom.CustomRegularTextView
+                                android:id="@+id/tv_suggestion_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:text="@string/SuggestionHeaderTxtMsg"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textSize="17sp"
+                                tools:ignore="RtlHardcoded" />
+
+                            <View
+                                android:id="@+id/view_addAddress_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/tv_suggestion_header"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/ViewDividerColor"
+                                android:orientation="horizontal"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/ll_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.uaet10.custom.CustomEditText
+                                android:id="@+id/et_suggestion_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/ContactEtName"
+                                android:inputType="text"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.uaet10.custom.CustomEditText
+                                android:id="@+id/et_suggestion_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/ContactEtEmail"
+                                android:inputType="textEmailAddress"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.uaet10.custom.CustomEditText
+                                android:id="@+id/et_suggestion_contact"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/BrandTxtContactNo"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.uaet10.custom.CustomEditText
+                                android:id="@+id/et_suggestion_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:ems="10"
+                                android:gravity="top|left"
+                                android:hint="@string/suggestionMessage"
+                                android:inputType="textMultiLine"
+                                android:lines="5"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_suggestion_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp">
+
+                            <Button
+                                android:id="@+id/b_suggestion_send"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_corner_shape"
+                                android:text="@string/contectSubmitText"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <include
+            android:id="@+id/rl_progressBar"
+            layout="@layout/progress_bar_layout"
+            android:visibility="gone" />
+
+    </RelativeLayout>-->

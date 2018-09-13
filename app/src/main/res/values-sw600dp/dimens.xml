@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="offerImgHeight">135dp</dimen>
+    <dimen name="home_category_row_height">180dp</dimen>
+    <dimen name="categoryItemImgHeight">160dp</dimen>
+
+    <dimen name="blog_img_height">230dp</dimen>
+
+    <dimen name="BannerHeight">240dp</dimen>
+    <dimen name="BottomMenuCellHeight">60dp</dimen>
+    <dimen name="topLeftImgBottom">150dp</dimen>
+    <dimen name="topCenterImgBottom">5dp</dimen>
+    <dimen name="ImgcenterTopMargin">20dp</dimen>
+    <dimen name="imgTopRight">5dp</dimen>
+    <dimen name="ImgRightBottom">150dp</dimen>
+    <dimen name="contactUsImgHeight">250dp</dimen>
+    <dimen name="businessDetailedbySearchImgHeight">200dp</dimen>
+    <dimen name="businessDetailedbySearchImgHeight2">240dp</dimen>
+    <dimen name="CategoryFragmentItemImgHeight">80dp</dimen>
+    <dimen name="sizeCatgeoryText">13sp</dimen>
+
+    <dimen name="splshCenterLRImage">30dp</dimen>
+
+    <dimen name="slideImgWidth">50dp</dimen>
+    <dimen name="slideImgHeight">14dp</dimen>
+
+
+
+
+</resources>

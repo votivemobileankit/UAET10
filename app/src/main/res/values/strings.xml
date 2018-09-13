@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">UAE TOP 10</string>
+    <string name="welcom_txt_msg">EXPLORE THE GEMS</string>
+    <string name="splashTxt">UAE TOP 10</string>
+    <string name="app_links">http://www.uaet10.com</string>
+    <string name="httpLink">http://</string>
+    <string name="applinkTxt">www.uaet10.com</string>
+    <string name="DefaultVideoLink">http://www.youtube.com/watch?v=tqMgCowYaGQ</string>
+
+    <string name="app_full_name">UAE TOP 10</string>
+    <string name="WelcomeTxtMsg">Welcome To \nUAE TOP 10</string>
+    <string name="DemoText">Demo</string>
+    <string name="apply">Want to grab more exciting vouchers? click here</string>
+    <string name="ReadMoreTxt">Read more</string>
+    <string name="ViewText">Views</string>
+    <string name="ViewTxtMsg">View</string>
+    <string name="SuggestionTxtMsg">Your Suggestion is submitted successfully.</string>
+
+    <string name="CheckTxtMsg">Check</string>
+    <string name="CancelTxtMsg">Cancel</string>
+    <string name="TermsAndConditionsTxt">T&amp;C Apply*</string>
+    <string name="InternetErrorMsg">Please check your Internet connection.</string>
+    <string name="VolleyErrorMsg">Something went wrong.please try again after some time.</string>
+
+    <string name="DemoTextLarge">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour or non-characteristic words etc</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_toggle">Toggle</string>
+    <string name="action_search">Search</string>
+    <string name="action_notification">Noti</string>
+    <string name="SearchHintText">Search Categories</string>
+
+    <!--botton_navigation_item-->
+
+    <string name="SideMenuCategoryNav">All Category</string>
+    <string name="categoryNav">Category</string>
+    <string name="homeNav">Home</string>
+    <string name="suggestionNav">Suggestion</string>
+    <string name="blogNav">Blog</string>
+    <string name="contactnav">Contact</string>
+    <string name="privacyPolicyNav">Privacy Policy</string>
+    <string name="TermsandCondionsNav">*Terms and Conditions</string>
+    <string name="copyRightNav">Copyright</string>
+    <string name="aboutNav">About us</string>
+    <string name="videoNav">Video</string>
+    <string name="OfferNav">Offers</string>
+    <string name="shareNav">Share</string>
+
+
+    <string name="offer_by">OFFER BY-</string>
+
+
+    <string-array name="bottom_menu">
+        <item>@string/homeNav</item>
+        <item>@string/OfferNav</item>
+        <item>@string/blogNav</item>
+        <item>@string/categoryNav</item>
+        <item>@string/contactnav</item>
+    </string-array>
+
+    <!--
+        Exit
+    -->
+
+    <string name="ExitDialogTitle">Exit</string>
+    <string name="ExitDialogMsg">Are you sure want to exit.</string>
+    <string name="TextNoInternetConnection">No Internet Connection</string>
+
+    <string name="contectSubmitText">Submit</string>
+    <string name="ContactEtName">Name</string>
+    <string name="ContactEtEmail">Email</string>
+    <string name="ContactEtMessage">Message</string>
+    <string name="title_activity_bootom_bar">BootomBarActivity</string>
+    <string name="title_home">Home</string>
+
+    <string name="BrandTxtName">Your Name</string>
+    <string name="BrandTxtSelectcalegory">Select Category</string>
+    <string name="BrandTxtContactNo">Contact Number</string>
+    <string name="BrandTxtEmail">Email</string>
+    <string name="BrandTxtCompany">Brand / Company / Business Name</string>
+    <string name="suggestionMessage">Suggestion</string>
+    <string name="SuggestionHeader">Suggestion</string>
+    <string name="SuggestionHeaderTxtMsg">To guide us further please provide your suggestions below, if any.Your suggestions are highly valuable to us.</string>
+    <string name="BusinessEmquiryTxtHeader">Predict and Win</string>
+    <string name="BusinessEnquiryBoucherMsg">UAE TOP 10 gives you an amazing opportunity to predict names of our future partners and WIN exciting prizes. On guessing the right name you get a chance to win FREE dinner vouchers, cruise trips and spa visits.</string>
+    <string name="BusinessEnquiryWinnerMsg">We will get back to You if your predicted name, makes it to the Top 10 list. For more exciting offers visit:</string>
+    <!-- Home Fragment-->
+    <string name="Home_No_Category_List">There is no category, Try again</string>
+    <string name="Offer_list_Msg">No Offers Available</string>
+    <string name="BlogListMsg">No Blogs.</string>
+
+    <string name="NosearchResultFoundMsg">No result found</string>
+
+    <string-array name="DrawerItems">
+        <item>@string/homeNav</item>
+        <item>@string/OfferNav</item>
+        <item>@string/blogNav</item>
+        <item>@string/categoryNav</item>
+        <item>@string/contactnav</item>
+        <item>@string/suggestionNav</item>
+        <item>@string/privacyPolicyNav</item>
+        <item>@string/TermsandCondionsNav</item>
+        <item>@string/copyRightNav</item>
+        <item>@string/aboutNav</item>
+
+    </string-array>
+
+    <string name="uae1address"> 902-D, Building#6 Media Zone, Twofour54, Abu Dhabi, UAE</string>
+    <string name="uae2_email"> admin@uaet10.com</string>
+    <string name="uae3_phone">+97126661244</string>
+
+
+
+    <string name="NoInternetTitleStr">NO RESULT</string>
+    <string name="NoInternetDescOneStr">Wake up  your Connection !</string>
+    <string name="NoInternetDescTwoStr">Your internet seems too slow to reach our server</string>
+    <string name="NoInternetButtonStr">TRY AGAIN</string>
+
+    <!-- Contact Us -->
+    <string name="ContactUsError">Something went wrong.</string>
+    <string name="ContactUsNameEmptyMsg">Please enter name</string>
+    <string name="ContactUsEmailEmptyMsg">Please enter email</string>
+    <string name="ContactUsMessageEmptyMsg">Please enter your messsage</string>
+    <string name="SuggestionListMsg">Please enter suggestion </string>
+    <string name="ContactUsInvalidEmailMsg">Please enter valid email address</string>
+    <string name="BrandCompanyName">Please enter company name</string>
+    <string name="BrandCompanyConatct">Please enter contact number</string>
+    <string name="BrandSelectCategory">Please select category</string>
+
+    <!-- TermsAndConditions -->
+    <string name="TermsAndConditionsNoRespError">No data found</string>
+    <string name="NoDataFoundTextErrorMsg">No data found</string>
+
+    <string name="SearchTextCurrentSearch">Search Result</string>
+    <string name="SearchTextRecentSearch">Recent Search</string>
+    <string name="SearchTextRecentSearchClearHistory">Clear history</string>
+
+    <string name="ViewAllCategoriesTxt">See All Category</string>
+    <string name="spinner_title">Select Category</string>
+
+    <string name="enquiryTextMsg">Successfully added your business enquiry.</string>
+
+    <string name="NoOffersErrorMsg">No Offers Available</string>
+    <string name="title_activity_blog_detail">BlogDetailActivity</string>
+    <string name="BlogDetailsShareBtnText">SHARE</string>
+
+    <string name="contactUsMsg">We have received your message and would like to thank you for writing to us. Our Customer Service will get back to you soon. Have a great day ahead!</string>
+    <string name="ShowVideoTxtMsg">Explore the App Promotional Video</string>
+    <string name="ThankyouMsg">Thanks</string>
+
+
+    <string-array name="SocialMediaShare">
+
+        <item>"Facebook"</item>
+        <item>"twitter"</item>
+        <item>"Google+"</item>
+        <item>"Linked in"</item>
+        <item>"tumblr"</item>
+        <item>"Delicious"</item>
+        <item>"stumble"</item>
+        <item>"deviant"</item>
+        <item>"pinrest"</item>
+        <item>"slideshare"</item>
+        <item>"vimeo"</item>
+        <item>"foursquare"</item>
+        <item>"wikipedia"</item>
+        <item>"youtube"</item>
+        <item>"instagram"</item>
+    </string-array>
+
+    <string name="AppShareTitle">Tap to the icon to share the app on that platform</string>
+    <string name="CompanyShareText">Please fill the form to list your company</string>
+    <string name="AppShareOtherTitle">Share it to the people by using these:</string>
+
+    <string name="SelectCategoryTxt">Select the category</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_notifi_popup">NotifiPopupActivity</string>
+    <string name="PermissionDeniedTitle">Permission denied</string>
+    <string name="PermissionDeniedMsg">Without this permission the app is unable to able register you. Are you sure want to deny this permission?</string>
+    <string name="PermissionDeniedRetryTxt">Re-try</string>
+    <string name="PermissionDeniedSureTxt">I\'m sure</string>
+    <string name="PermissionGoSettingTitle">Go settings</string>
+    <string name="PermissionGoSettingMsg">To help you to use this app, access to your phone state. Tap settings > permissions, and turn Phone on.</string>
+    <string name="PermissionGoSettingTxt">SETTINGS</string>
+    <string name="PermissionDeniedMsgForLogin">Without this permission the app is unable to able login you. Are you sure want to deny this permission?</string>
+    <string name="facebook_app_id">1603893749652500</string>
+
+
+    <string name="CompanyUserNameText">Enter Your Name</string>
+    <string name="CompanyNameText">Enter Company Name</string>
+    <string name="CompanyMobileNoText">Enter Mobile Number</string>
+    <string name="CompanyText"> "Great things in business are never done by one person:</string>
+    <string name="CompanyNewLineText">They\'re done by a team of people "</string>
+    <string name="AuthorText"> -Steve Jobs</string>
+
+    <string name="CompanyUserNameEmptyMsg">Please enter your name</string>
+    <string name="CompanyNameEmptyMsg">Please enter company name</string>
+    <string name="CompanyMobNoEmptyMsg">Please enter mobile name</string>
+    <string name="ListCompanyText">List your company</string>
+    <string name="ListCompanyTextPopup">List Your</string>
+    <string name="CompanyTextMsg">Company</string>
+    <string name="ClickHereText">Click Here</string>
+    <string name="Remindlater">Remind later</string>
+
+
+    <string name="expirydate">*Barcode will expire on </string>
+    <string name="expiretext">BarCode will Expire on </string>
+    <string name="max_allowed">*Max Voucher Allowed for each person (5)*</string>
+    <string name="take_screenshot">*Please take a screenshot before leaving the page.*</string>
+    <string name="redeem_offer">Reedem the offer with in one week of bar cade issuance</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="update_from">Update now</string>
+    <string name="new_update_title">Time to be Update</string>
+    <string name="new_update_msg">Latest update of UAE Top 10 now you have more updated features!</string>
+</resources>

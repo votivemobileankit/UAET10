@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:checked="false"
+        android:icon="@drawable/ic_yellow_home"
+        android:title="@string/homeNav" />
+    <item
+        android:id="@+id/nav_offers"
+        android:checked="false"
+        android:icon="@drawable/ic_offers"
+        android:title="@string/OfferNav" />
+    <item
+        android:id="@+id/nav_blog"
+        android:checked="false"
+        android:icon="@drawable/ic_blogs"
+        android:title="@string/blogNav" />
+    <item
+        android:id="@+id/nav_category"
+        android:checked="false"
+        android:icon="@drawable/ic_category"
+        android:title="@string/SideMenuCategoryNav" />
+    <item
+        android:id="@+id/nav_contact"
+        android:checked="false"
+        android:icon="@drawable/ic_contact_us"
+        android:title="@string/contactnav" />
+    <item
+        android:id="@+id/nav_suggestion"
+        android:checked="false"
+        android:icon="@drawable/ic_suggestions"
+        android:title="@string/suggestionNav" />
+    <item
+        android:id="@+id/nav_privacy_policy"
+        android:checked="false"
+        android:icon="@drawable/ic_privacy_pocliy"
+        android:title="@string/privacyPolicyNav" />
+    <item
+        android:id="@+id/nav_terms_conditions"
+        android:checked="false"
+        android:icon="@drawable/ic_terms_and_conditions"
+        android:title="@string/TermsandCondionsNav" />
+    <item
+        android:id="@+id/nav_copyright"
+        android:checked="false"
+        android:icon="@drawable/ic_copy_right"
+        android:title="@string/copyRightNav" />
+    <item
+        android:id="@+id/nav_about"
+        android:checked="false"
+        android:icon="@drawable/ic_about_us"
+        android:title="@string/aboutNav" />
+
+    <item
+        android:id="@+id/nav_play_video"
+        android:checked="false"
+        android:icon="@drawable/ic_play_video"
+        android:visible="true"
+        android:title="@string/videoNav" />
+    <item
+        android:id="@+id/nav_share"
+        android:checked="false"
+        android:icon="@drawable/ic_share"
+        android:title="@string/shareNav" />
+
+</menu>

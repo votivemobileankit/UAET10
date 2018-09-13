@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_search_Item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPadding="0dp">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <votive.com.appuaet10.CustomUI.CustomBoldTextView
+                    android:id="@+id/tv_notify_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14dp"
+                    android:padding="5dp"
+                    android:ellipsize="end"
+                    android:layout_weight="7"/>
+
+                <votive.com.appuaet10.CustomUI.CustomBoldTextView
+                    android:id="@+id/tv_notify_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10dp"
+                    android:padding="5dp"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_notify_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notification_image_height"
+                android:layout_margin="5dp"
+                fresco:actualImageScaleType="fitXY"
+                fresco:placeholderImage="@drawable/ic_placeholder"
+                android:visibility="gone"/>
+
+            <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                android:id="@+id/tv_notify_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

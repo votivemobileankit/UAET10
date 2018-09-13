@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:background="@color/ViewDividerColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="votive.com.appuaet10.Activities.HomeActivity"
+    tools:showIn="@layout/app_bar_drawer">
+
+    <FrameLayout
+        android:id="@+id/fl_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_home"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_home"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_home_bottom_menu"
+        android:background="@color/ViewDividerColor"
+        android:orientation="horizontal"
+        android:visibility="visible" />
+
+
+    <include
+        android:id="@+id/ll_home_bottom_menu"
+        layout="@layout/bottom_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BottomMenuCellHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

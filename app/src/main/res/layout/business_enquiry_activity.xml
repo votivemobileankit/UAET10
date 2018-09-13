@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_top_brand_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="votive.com.appuaet10.Activities.BusinessEnquiryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/rl_category_list_no_internet_main"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/sv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/abl_header"
+        android:background="@color/LightSmokyColor"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_category_list_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/LightSmokyColor">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="0dp"
+                    card_view:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp">
+
+                            <votive.com.appuaet10.CustomUI.CustomBoldTextView
+                                android:id="@+id/tv_suggestion_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:text="@string/BusinessEmquiryTxtHeader"
+                                android:textColor="@color/NoInternetTitleColor"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textSize="22sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlHardcoded" />
+
+                            <View
+                                android:id="@+id/view_addAddress_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/tv_suggestion_header"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/ViewDividerColor"
+                                android:orientation="horizontal"
+                                android:visibility="visible" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp">
+
+                            <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                                android:id="@+id/tv_business_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:text="@string/BusinessEnquiryBoucherMsg"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/tv_business_txt"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/ViewDividerColor"
+                                android:orientation="horizontal"
+                                android:visibility="visible" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/ll_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/LightSmokyColor">
+
+
+                            <Spinner
+                                android:id="@+id/spinner_category"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="10dp"
+                                android:prompt="@string/spinner_title"
+                                android:spinnerMode="dialog" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/LightSmokyColor">
+
+
+                            <votive.com.appuaet10.CustomUI.CustomEditText
+                                android:id="@+id/et_brand_company_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/BrandTxtCompany"
+                                android:inputType="text"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.appuaet10.CustomUI.CustomEditText
+                                android:id="@+id/et_brand_your_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/BrandTxtName"
+                                android:inputType="text"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.appuaet10.CustomUI.CustomEditText
+                                android:id="@+id/et_brand_contact_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/BrandTxtContactNo"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.appuaet10.CustomUI.CustomEditText
+                                android:id="@+id/et_brand_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/BrandTxtEmail"
+                                android:inputType="textEmailAddress"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_contact_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp">
+
+                            <Button
+                                android:id="@+id/b_brand_send"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_corner_shape"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/contectSubmitText"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp">
+
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/ViewDividerColor"
+                                android:orientation="horizontal"
+                                android:visibility="visible" />
+
+
+                            <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/view"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:text="@string/BusinessEnquiryWinnerMsg"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/rl_progressBar"
+        layout="@layout/progress_bar_layout"
+        android:visibility="gone" />
+</RelativeLayout>

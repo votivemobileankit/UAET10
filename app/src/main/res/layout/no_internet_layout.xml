@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+
+        <votive.com.appuaet10.CustomUI.CustomBoldTextView
+            android:id="@+id/tv_no_internet_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textColor="@color/NoInternetTitleColor"
+            android:text="@string/NoInternetTitleStr" />
+
+        <ImageView
+            android:id="@+id/iv_no_internet"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/no_internet" />
+
+        <votive.com.appuaet10.CustomUI.CustomBoldTextView
+            android:id="@+id/tv_no_internet_desc_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/NoInternetTitleColor"
+            android:text="@string/NoInternetDescOneStr" />
+
+        <votive.com.appuaet10.CustomUI.CustomRegularTextView
+            android:id="@+id/tv_no_internet_desc_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/NoInternetNormalColor"
+            android:text="@string/NoInternetDescTwoStr" />
+
+        <Button
+            android:id="@+id/btn_no_internet_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_border_style"
+            android:text="@string/NoInternetButtonStr"
+            android:textColor="@color/colorText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

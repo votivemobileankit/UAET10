@@ -1,0 +1,74 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="BottomMenuCellHeight">56dp</dimen>
+    <dimen name="BottomMenuCellTopPadding">6dp</dimen>
+    <dimen name="BottomMenuCellBottomPadding">10dp</dimen>
+    <dimen name="BottomMenuCellLeftPadding">5dp</dimen>
+    <dimen name="BottomMenuCellRightPadding">5dp</dimen>
+    <dimen name="BottomMenuImageHeight">24dp</dimen>
+    <dimen name="BottomMenuImageWidth">24dp</dimen>
+
+
+    <dimen name="home_category_row_height">150dp</dimen>
+    <dimen name="blog_img_height">180dp</dimen>
+
+    <dimen name="CategoryDetailsListImageWidth">157dp</dimen>
+    <dimen name="CategoryDetailsListImageHeight">140dp</dimen>
+
+
+    <dimen name="LikeImgHeight">30dp</dimen>
+    <dimen name="LikeImgWidth">30dp</dimen>
+
+    <dimen name="DetailedShareImgHeight">20dp</dimen>
+    <dimen name="DetailedShareImgWidth">20dp</dimen>
+    <dimen name="ContactImgHeight">120dp</dimen>
+    <dimen name="ContactImgWidth">120dp</dimen>
+
+    <dimen name="BannerHeight">200dp</dimen>
+
+    <dimen name="ShareIconSize">50dp</dimen>
+
+    <dimen name="offerImgHeight">110dp</dimen>
+    <dimen name="categoryItemImgHeight">120dp</dimen>
+    <dimen name="topLeftImgBottom">120dp</dimen>
+    <dimen name="topCenterImgBottom">15dp</dimen>
+    <dimen name="ImgcenterTopMargin">20dp</dimen>
+    <dimen name="imgTopRight">15dp</dimen>
+    <dimen name="ImgRightBottom">120dp</dimen>
+    <dimen name="contactUsImgHeight">200dp</dimen>
+    <dimen name="businessDetailedbySearchImgHeight">180dp</dimen>
+    <dimen name="businessDetailedbySearchImgHeight2">220dp</dimen>
+    <dimen name="CategoryFragmentItemImgHeight">60dp</dimen>
+
+    <dimen name="sizeCatgeoryText">10sp</dimen>
+    <dimen name="splshCenterLRImage">2dp</dimen>
+
+    <dimen name="slideImgWidth">70dp</dimen>
+    <dimen name="slideImgHeight">18dp</dimen>
+
+    <dimen name="VideoPopupHeight">150dp</dimen>
+    <dimen name="ImgVideoHeight">28dp</dimen>
+
+
+    <dimen name="barcodeImgHeight">50dp</dimen>
+
+    <dimen name="notification_image_height">150dp</dimen>
+
+    <!-- Notification Menu -->
+    <dimen name="NotificationCustomLayoutWidth">40dp</dimen>
+    <dimen name="NotificationCustomLayoutHeight">40dp</dimen>
+    <dimen name="NotificationCustomTextWidth">14dp</dimen>
+    <dimen name="NotificationCustomTextHeight">14dp</dimen>
+    <dimen name="NotificationCustomImgHeight">24dp</dimen>
+    <dimen name="NotificationCustomImgWidth">24dp</dimen>
+
+    <dimen name="NotificationSubTextSize">7sp</dimen>
+
+</resources>

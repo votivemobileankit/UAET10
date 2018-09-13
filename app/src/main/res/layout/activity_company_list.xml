@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="votive.com.appuaet10.Activities.CompanyListActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/abl_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/ll_blog_row_main"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/company_bg"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/iv_share_frag_app_share"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_list_icon" />
+
+                <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                    android:id="@+id/tv_share_frag_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/CompanyShareText"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_blog_row_main"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/LightSmokyColor">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="0dp"
+                    card_view:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/ll_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rounded_border_company">
+
+                            <ImageView
+                                android:id="@+id/img_call"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_company_user" />
+
+                            <View
+                                android:id="@+id/view_one"
+                                android:layout_width="1dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/img_call"
+                                android:background="@color/ViewDividerColor" />
+
+                            <EditText
+                                android:id="@+id/et_user_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/view_one"
+                                android:background="@null"
+                                android:hint="@string/CompanyUserNameText"
+                                android:inputType="text"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/ll_company_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+
+                            android:background="@drawable/rounded_border_company">
+
+                            <ImageView
+                                android:id="@+id/img_compamy"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_company_name" />
+
+                            <View
+                                android:id="@+id/view_compamy"
+                                android:layout_width="1dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/img_compamy"
+                                android:background="@color/ViewDividerColor" />
+
+                            <EditText
+                                android:id="@+id/et_compamy_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/view_compamy"
+                                android:background="@null"
+                                android:hint="@string/CompanyNameText"
+                                android:inputType="text"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/ll_mobile_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+
+                            android:background="@drawable/rounded_border_company">
+
+                            <ImageView
+                                android:id="@+id/img_mobile"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_company_call" />
+
+                            <View
+                                android:id="@+id/view_mobile"
+                                android:layout_width="1dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/img_mobile"
+                                android:background="@color/ViewDividerColor" />
+
+                            <EditText
+                                android:id="@+id/et_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/view_mobile"
+                                android:background="@null"
+                                android:hint="@string/CompanyMobileNoText"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_contact_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp">
+
+                            <Button
+                                android:id="@+id/b_contact_send"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/selected_activedots"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:text="@string/contectSubmitText"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="14sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp">
+
+                            <ImageView
+                                android:id="@+id/img_logo"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_home_icon" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/img_logo"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:gravity="start"
+                                    android:text="@string/CompanyText"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:text="@string/CompanyNewLineText"
+                                    android:textSize="14sp"
+                                    android:textStyle="italic" />
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/rl_progressBar"
+        layout="@layout/progress_bar_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,295 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/LightSmokyColor"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/ll_blog_row_main"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/contactUsImgHeight"
+                android:background="@drawable/contact_bg"
+                android:gravity="center">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_blog_row_main"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/LightSmokyColor">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="0dp"
+                    card_view:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                      >
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            app:srcCompat="@drawable/ic_uae1" />
+
+
+                        <votive.com.appuaet10.CustomUI.CustomRegularTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/uae1address" />
+
+
+
+                    </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_uae2" />
+
+
+                            <votive.com.appuaet10.CustomUI.CustomRegularTextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorBlack"
+                                android:text="@string/uae2_email" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                app:srcCompat="@drawable/ic_uae3" />
+
+
+                            <votive.com.appuaet10.CustomUI.CustomRegularTextView
+android:id="@+id/contactus_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorBlack"
+                                android:text="@string/uae3_phone" />
+
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/ll_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.appuaet10.CustomUI.CustomEditText
+                                android:id="@+id/et_contact_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/ContactEtName"
+                                android:inputType="text"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.appuaet10.CustomUI.CustomEditText
+                                android:id="@+id/et_contact_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/ContactEtEmail"
+                                android:inputType="textEmailAddress"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+
+                            android:layout_marginTop="8dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <EditText
+                                android:id="@+id/et_contact_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:hint="@string/BrandTxtContactNo"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@color/LightSmokyColor">
+
+                            <votive.com.appuaet10.CustomUI.CustomEditText
+                                android:id="@+id/et_contact_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:ems="10"
+                                android:gravity="top|left"
+                                android:hint="@string/ContactEtMessage"
+                                android:inputType="textMultiLine"
+                                android:lines="3"
+                                android:padding="15dp"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/RegisterHintColor"
+                                android:textCursorDrawable="@null"
+                                android:textSize="13sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_contact_submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="8dp">
+
+                            <Button
+                                android:id="@+id/b_contact_send"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/round_corner_shape"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/contectSubmitText"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16sp"
+                                tools:ignore="RtlHardcoded" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/rl_progressBar"
+        layout="@layout/progress_bar_layout"
+        android:visibility="gone" />
+
+</RelativeLayout>

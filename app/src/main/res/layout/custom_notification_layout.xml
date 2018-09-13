@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/NotificationCustomLayoutWidth"
+    android:layout_height="@dimen/NotificationCustomLayoutHeight"
+    android:clickable="true"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="@dimen/NotificationCustomImgWidth"
+        android:layout_height="@dimen/NotificationCustomImgHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_action_notifications"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_notification_count"
+        android:layout_width="@dimen/NotificationCustomTextWidth"
+        android:layout_height="@dimen/NotificationCustomTextHeight"
+        android:background="@drawable/notify_txt"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/notificationBadgeText"
+        android:textSize="@dimen/NotificationSubTextSize"
+        tools:ignore="HardcodedText,RtlHardcoded"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

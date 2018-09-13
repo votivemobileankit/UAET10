@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nested_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false">
+
+                <LinearLayout
+                    android:id="@+id/ll_business_details_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/iv_business_display"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/businessDetailedbySearchImgHeight"
+                        android:background="@color/colorWhite"
+                        fresco:placeholderImage="@drawable/ic_placeholder"
+                        fresco:viewAspectRatio="1.77" />
+
+
+
+
+                            <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                                android:id="@+id/tv_business_views"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:gravity="end"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:background="@color/colorHalfTransparent"
+                                android:padding="3dp"
+                                android:text="@string/DemoText"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="10sp"
+                                tools:ignore="RtlHardcoded" />
+
+
+
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/ViewDividerColor" />
+
+                    <LinearLayout
+                        android:id="@+id/rl_product_details_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_business_info_inner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="150dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="2dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="2dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.7">
+
+
+                                        <votive.com.appuaet10.CustomUI.CustomBoldTextView
+                                            android:id="@+id/tv_category_title"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:inputType="textMultiLine"
+                                            android:maxLines="3"
+                                            android:padding="3dp"
+                                            android:text="@string/DemoText"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="15sp" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/ll_business_views"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="0.3"
+                                        android:orientation="horizontal"
+                                        android:gravity="right">
+
+                                        <ImageView
+                                            android:id="@+id/img_like"
+                                            android:layout_width="@dimen/LikeImgWidth"
+                                            android:layout_height="@dimen/LikeImgHeight"
+
+                                            android:background="@drawable/ic_like_icon" />
+
+                                        <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                                            android:id="@+id/tv_like_count"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+                                            android:gravity="center"
+                                            android:textAlignment="center"
+                                            android:maxLines="1"
+                                            android:text="10"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/colorBlack"
+                                            android:textSize="12sp"
+                                            android:textStyle="bold"
+                                            tools:ignore="RtlHardcoded" />
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                                <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                                    android:id="@+id/tv_business_detailed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:focusable="false"
+                                    android:gravity="left|center"
+                                    android:padding="3dp"
+                                    android:text="@string/DemoText"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="12sp"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <votive.com.appuaet10.CustomUI.CustomRegularTextView
+                                    android:id="@+id/tv_category_detailed_more"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@drawable/text_border_style"
+                                    android:focusable="false"
+                                    android:gravity="right"
+                                    android:text="@string/ReadMoreTxt"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="13sp"
+
+                                    android:textStyle="bold|normal"
+                                    android:visibility="gone"
+                                    tools:ignore="RtlHardcoded" />
+                            </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="4dp"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp"
+                                    android:visibility="visible">
+
+                                    <ImageView
+                                        android:id="@+id/img_calling"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+                                        android:visibility="gone"
+                                        android:layout_marginRight="4dp"
+                                        android:src="@drawable/ic_calling" />
+
+                                    <ImageView
+                                        android:id="@+id/img_weblink"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:visibility="gone"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+                                        android:layout_marginRight="4dp"
+                                        android:src="@drawable/ic_link" />
+
+
+                                    <ImageView
+                                        android:id="@+id/img_send_email"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:visibility="gone"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_marginRight="4dp"
+                                        android:src="@drawable/ic_email" />
+
+
+                                    <ImageView
+                                        android:id="@+id/img_fb"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:visibility="gone"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+                                        android:layout_marginRight="5dp"
+                                        android:src="@drawable/ic_facebook" />
+
+                                    <ImageView
+                                        android:id="@+id/img_instagram"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+                                        android:visibility="gone"
+                                        android:layout_marginRight="5dp"
+                                        android:src="@drawable/ic_insta" />
+
+
+                                    <ImageView
+                                        android:id="@+id/img_linkdin"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:visibility="gone"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+                                        android:layout_marginRight="5dp"
+                                        android:src="@drawable/ic_linkdin" />
+
+                                    <ImageView
+                                        android:id="@+id/img_twitter"
+                                        android:visibility="gone"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+                                        android:src="@drawable/ic_twitter" />
+
+                                    <ImageView
+                                        android:id="@+id/img_share_link"
+                                        android:layout_width="@dimen/DetailedShareImgHeight"
+                                        android:layout_height="@dimen/DetailedShareImgWidth"
+android:visibility="gone"
+                                        android:layout_marginRight="5dp"
+                                        android:src="@drawable/ic_share_icon" />
+
+                                </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/rl_business_details_no_internet"
+        layout="@layout/no_internet_layout"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/rl_progressBar"
+        layout="@layout/progress_bar_layout"
+        android:visibility="gone" />
+</RelativeLayout>
+

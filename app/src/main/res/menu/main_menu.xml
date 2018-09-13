@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search_b"
+        android:title="@string/action_search"
+        app:showAsAction="always"
+        android:visible="false"
+        android:icon="@drawable/ic_search_white"/>
+
+    <item
+        android:id="@+id/action_notification"
+        app:showAsAction="always"
+        android:visible="true"
+        android:title=""
+        app:actionLayout="@layout/custom_notification_layout" />
+
+    <item
+        android:id="@+id/action_toggle"
+        android:title="@string/action_toggle"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_toggle"/>
+
+  </menu>

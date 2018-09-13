@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d79853</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">@color/colorBlack</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransParent">#80000000</color>
+    <color name="colorHalfTransparent">#7F000000</color>
+    <color name="colorText">#d79853</color>
+    <color name="StatusbarColor">@color/colorBlack</color>
+    <color name="ViewDividerColor">#d3d3d3</color>
+    <color name="TransParentColor">#80000000</color>
+    <color name="TransParentMenuColor">#c2ffffff</color>
+
+    <color name="ProgressBarBg">#33ffffff</color>
+    <color name="dark_overlay">#44442828</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="ColorGreen">#00ff00</color>
+
+    <color name="lightOrangeTextColor">#FFEED1</color>
+    <color name="RegisterHintColor">#808080</color>
+    <color name="LightSmokyColor">#f0f0f0</color>
+    <color name="HomeSearchBgColor">#fec37f</color>
+
+    <color name="NoInternetTitleColor">@color/colorPrimary</color>
+    <color name="NoInternetNormalColor">@color/colorBlack</color>
+
+    <color name="ViewCategoryDividerColor">#28303a</color>
+    <color name="TransparentNoColor">#00000000</color>
+
+    <color name="SplashHeaderTxtColor">#FECF7F</color>
+
+    <!--Home used color codes-->
+
+    <color name="HomeBgColor">@color/LightSmokyColor</color>
+
+    <color name="CategoryGridItemBg">#343434</color>
+    <color name="CategoryGridItemNormal">#D99E50</color>
+
+    <color name="IndicatorActive">#d79853</color>
+    <color name="IndicatorInActive">#ffffffff</color>
+
+
+    <color name="PopupColorBg">#99000000</color>
+
+    <color name="notificationBadgeText">@color/colorWhite</color>
+
+</resources>
